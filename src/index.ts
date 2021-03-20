@@ -38,7 +38,7 @@ const getArticles = (pageQuery: string) => {
 }
 
 const getArticle = (pageQuery: string) => {
-    const url: string = _.join([baseURL,pageQuery],'/')
+    const url: string = _.join([baseURL,pageQuery],'')
     return axios.get(url)
         .then((response)=>{
             let $ = cheerio.load(response.data);
