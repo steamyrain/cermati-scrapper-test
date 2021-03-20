@@ -10,6 +10,7 @@
 
 # production
 /dist
+solution.js
 
 # misc
 .DS_Store
